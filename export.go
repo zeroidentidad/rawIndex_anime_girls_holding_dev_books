@@ -65,7 +65,7 @@ func main() {
 
 			finalURL := baseURL + relativePath
 
-			sql := fmt.Sprintf("INSERT INTO waifus (file_path) VALUES ('%s');\n", finalURL)
+			sql := fmt.Sprintf("INSERT INTO waifus (path) VALUES ('%s');\n", finalURL)
 
 			_, err = file.WriteString(sql)
 			if err != nil {
